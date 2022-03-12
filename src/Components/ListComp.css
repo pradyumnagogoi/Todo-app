@@ -1,0 +1,33 @@
+.listComp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.removeBtn {
+  background-color: transparent;
+  border: none;
+}
+
+.deleteBtn {
+  transform: scale(1.5);
+  color: white;
+  cursor: pointer;
+}
+
+.deleteBtn:hover {
+  color: red;
+  transition: 1s;
+  transform: rotate(180deg);
+}
+
+.listComp > li {
+  width: 75%;
+  height: 35px;
+  color: white;
+  border-bottom: 2px solid #fff;
+  text-align: left;
+  padding: 5px;
+  font-size: 25px;
+}
