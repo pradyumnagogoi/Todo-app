@@ -9,13 +9,14 @@ function Todo() {
     const [todo, setTodo] = useState("");
     const [addTodo, setAddTodo] = useState([]);
 
+    
     const addlist =() =>{
         setAddTodo((value)=>{
             return [...value, todo]
         });
         setTodo(" ");
-    };
-    
+    }
+     
     const itemEvent = (event) => {
         setTodo(event.target.value)
     };
@@ -38,7 +39,7 @@ return (
                 className='input'
                 name='text'
                 value={todo}
-                placeholder='Enter your todos' 
+                placeholder='Enter your todos...' 
                 onChange = {itemEvent} />
             <button className='btn' onClick={addlist}><Add className='addBtn' /></button>
             </div>
